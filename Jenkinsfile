@@ -4,7 +4,5 @@ import com.example.*
 pipeline {
     agent any
 
-    stages {
         new Pipeline(this, "config.yml").execute()
-    }
 }
