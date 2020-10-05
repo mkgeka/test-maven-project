@@ -9,7 +9,7 @@ node {
                 sh "cd database && mvn clean test -Dscope=FlywayMigration"
         }
         stage('deploy') {
-                sh "mvn clean install"
+                sh "cd project && mvn clean install"
         }
         stage('test') {
                 sh "cd test && mvn clean test -Dscope=performance"
