@@ -2,5 +2,5 @@
 import com.example.*
 
 // new Pipeline(this, "config.yml").execute()
-def z = new org.foo.Zot()
+def z = new com.example.Zot()
 z.checkOutFrom(repo)
