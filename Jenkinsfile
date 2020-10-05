@@ -1,4 +1,4 @@
 @Library('test-pipeline-library') _
 import com.example.*
 
-new Pipeline(this, "config.yml").execute()
+new Pipeline(this, "README.md").execute()
