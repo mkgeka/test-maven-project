@@ -6,4 +6,5 @@ pipeline {
 
     stages {
         new Pipeline(this, "config.yml").execute()
+    }
 }
