@@ -1,5 +1,5 @@
 def loadValuesYaml(){
-  def valuesYaml = readYaml (file: 'config.yaml')
+  def valuesYaml = readYaml (file: 'config.yml')
   return valuesYaml;
 }
 
