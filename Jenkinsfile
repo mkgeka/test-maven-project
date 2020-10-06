@@ -1,35 +1,4 @@
-def loadValuesYaml(){
-  def valuesYaml = readYaml (file: 'config.yml')
-  return valuesYaml;
-}
+@Library('test-pipeline-library') _
+import com.example.*
 
-pipeline {
-  agent {
-    label "master"
-  }
-  stages {
-    stage('CICD Initialize') {
-      steps {
-        script{
-          valuesYaml = loadValuesYaml()
-          println valuesYaml.getClass()
-        }
-      }
-    }
-    stage('test') {
-      steps {
-        echo valuesYaml.test
-      }
-    }
-    stage('build') {
-      steps {
-        echo valuesYaml.build
-      }
-    }
-    stage('Deploy') {
-      steps {
-        echo valuesYaml.deploy
-      }
-    }
-  }
-}
+new Pipeline(this, "config.yml").execute()
