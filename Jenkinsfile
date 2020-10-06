@@ -16,6 +16,16 @@ pipeline {
         }
       }
     }
+    stage('build') {
+      steps {
+        echo valuesYaml.build
+      }
+    }
+    stage('test') {
+      steps {
+        echo valuesYaml.test
+      }
+    }
     stage('Deploy') {
       steps {
         echo valuesYaml.deploy
