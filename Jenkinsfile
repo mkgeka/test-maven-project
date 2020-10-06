@@ -5,7 +5,7 @@ def loadValuesYaml(){
 
 pipeline {
   agent {
-    label "jenkins-maven"
+    label "master"
   }
   stages {
     stage('CICD Initialize') {
