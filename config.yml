@@ -7,7 +7,7 @@ notifications:
     on_success: "always"
 #Build configuration
 build:
-  projectFolder:  'project'
+  projectFolder:  'project1'
   buildCommand: "mvn clean test"
 #Database configuration
 database:
