@@ -2,5 +2,3 @@
 import com.example.*
 
 new Pipeline(this, "config.yml").execute()
-
-println valuesYaml 
