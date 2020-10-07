@@ -12,7 +12,7 @@ build:
 #Database configuration
 database:
   databaseFolder: 'database'
-  databaseCommand: "mvn clean test -Dscope=FlywayMigration; exit 1"
+  databaseCommand: "mvn clean test -Dscope=FlywayMigration"
 #Deploy configuration
 deploy:
   deployCommand: "mvn clean install"
@@ -26,4 +26,4 @@ test:
   testCommand: "mvn clean test -Dscope=regression"
 - testFolder: "test"
   name: "integration"
-  testCommand: "mvn clean test -Dscope=integration"
+  testCommand: "mvn clean test -Dscope=integration; exit 1"
