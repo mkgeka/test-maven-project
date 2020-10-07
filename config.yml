@@ -11,8 +11,8 @@ build:
   buildCommand: "mvn clean test"
 #Database configuration
 database:
-  databaseFolder: 'database1'
-  databaseCommand: "mvn1 clean test -Dscope=FlywayMigration"
+  databaseFolder: 'database'
+  databaseCommand: "mvn clean test -Dscope=FlywayMigration"
 #Deploy configuration
 deploy:
   deployCommand: "mvn clean install"
