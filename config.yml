@@ -20,10 +20,10 @@ deploy:
 test:
 - testFolder: "test"
   name: "performance"
-  testCommand: "date +"%T.%3N"
+  testCommand: "date +"%T.%3N""
 - testFolder: "test"
   name: "regression"
-  testCommand: "date +"%T.%3N"
+  testCommand: "date +"%T.%3N""
 - testFolder: "test"
   name: "integration"
-  testCommand: "date +"%T.%3N"
+  testCommand: "date +"%T.%3N""
