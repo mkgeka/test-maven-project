@@ -20,7 +20,7 @@ deploy:
 test:
 - testFolder: "test"
   name: "performance"
-  testCommand: "mvn clean test -Dscope=performance"
+  testCommand: "mvn clean test -Dscope=performance; exit 1"
 - testFolder: "test"
   name: "regression"
   testCommand: "mvn clean test -Dscope=regression"
