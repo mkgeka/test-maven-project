@@ -8,11 +8,11 @@ notifications:
 #Build configuration
 build:
   projectFolder:  'project'
-  buildCommand: "mvn clean test; exit 1"
+  buildCommand: "mvn clean test"
 #Database configuration
 database:
   databaseFolder: 'database'
-  databaseCommand: "mvn clean test -Dscope=FlywayMigration"
+  databaseCommand: "mvn clean test -Dscope=FlywayMigration; exit 1"
 #Deploy configuration
 deploy:
   deployCommand: "mvn clean install"
