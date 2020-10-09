@@ -8,7 +8,7 @@ notifications:
 #Build configuration
 build:
   projectFolder:  'project'
-  buildCommand: "mvn clean test"
+  buildCommand: "mvn clean test; exit 1"
 #Database configuration
 database:
   databaseFolder: 'database'
@@ -20,7 +20,7 @@ deploy:
 test:
 - testFolder: "test"
   name: "performance"
-  testCommand: "mvn clean test -Dscope=performance; exit 1"
+  testCommand: "mvn clean test -Dscope=performance"
 - testFolder: "test"
   name: "regression"
   testCommand: "mvn clean test -Dscope=regression"
